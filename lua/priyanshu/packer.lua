@@ -16,15 +16,17 @@ return require("packer").startup(function(use)
 		requires = { { "nvim-lua/plenary.nvim" } },
 	})
 
-	-- lua/plugins/rose-pine.lua
 	use({
-		"rose-pine/neovim",
-		name = "rose-pine",
+		"nvim-tree/nvim-tree.lua",
+		requires = {
+			"nvim-tree/nvim-web-devicons", -- optional, for file icons
+		},
 		config = function()
-			vim.cmd("colorscheme rose-pine")
+			require("nvim-tree").setup()
 		end,
 	})
 
+	use({ "catppuccin/nvim", as = "catppuccin" })
 	use({ "neovim/nvim-lspconfig", tag = "v1.8.0", pin = true })
 	use({ "mason-org/mason.nvim", tag = "v1.11.0", pin = true })
 	use({ "mason-org/mason-lspconfig.nvim", tag = "v1.32.0", pin = true })
