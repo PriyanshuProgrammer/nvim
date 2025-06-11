@@ -1,6 +1,7 @@
 require("priyanshu")
 vim.cmd("set number")
-vim.cmd.colorscheme("catppuccin")
+vim.o.guifont = "FiraCode Nerd Font:h14"
+vim.o.termguicolors = true
 vim.api.nvim_create_autocmd("TextYankPost", {
 	pattern = "*",
 	callback = function()
