@@ -75,6 +75,7 @@ time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
   catppuccin = {
+    config = { "\27LJ\2\n構1\0\0\3\0\a\0\f6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\0016\0\4\0009\0\5\0009\0\6\0'\2\1\0B\0\2\1K\0\1\0\16colorscheme\bcmd\bvim\1\0\2\fflavour\nmocha\27transparent_background\2\nsetup\15catppuccin\frequire\0" },
     loaded = true,
     path = "/home/priyanshu/.local/share/nvim/site/pack/packer/start/catppuccin",
     url = "https://github.com/catppuccin/nvim"
@@ -105,7 +106,7 @@ _G.packer_plugins = {
     url = "https://github.com/hrsh7th/cmp-vsnip"
   },
   ["lualine.nvim"] = {
-    config = { "\27LJ\2\n構1\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\2B\0\2\1K\0\1\0\foptions\1\0\1\foptions\0\1\0\3\23section_separators\5\ntheme\tauto\25component_separators\5\nsetup\flualine\frequire\0" },
+    config = { "\27LJ\2\n構1\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\2B\0\2\1K\0\1\0\foptions\1\0\1\foptions\0\1\0\3\25component_separators\5\23section_separators\5\ntheme\tauto\nsetup\flualine\frequire\0" },
     loaded = true,
     path = "/home/priyanshu/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
@@ -152,7 +153,7 @@ _G.packer_plugins = {
     url = "https://github.com/nvim-tree/nvim-web-devicons"
   },
   ["onedark.nvim"] = {
-    config = { "\27LJ\2\nb\0\0\3\0\5\0\f6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\0016\0\0\0'\2\1\0B\0\2\0029\0\4\0B\0\1\1K\0\1\0\tload\1\0\1\nstyle\vdarker\nsetup\fonedark\frequire\0" },
+    config = { "\27LJ\2\nｦ\5\0\0\5\0\30\0Y6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\0016\0\0\0'\2\1\0B\0\2\0029\0\4\0B\0\1\0016\0\5\0009\0\6\0009\0\a\0)\2\0\0'\3\b\0005\4\t\0B\0\4\0016\0\5\0009\0\6\0009\0\a\0)\2\0\0'\3\n\0005\4\v\0B\0\4\0016\0\5\0009\0\6\0009\0\a\0)\2\0\0'\3\f\0005\4\r\0B\0\4\0016\0\5\0009\0\6\0009\0\a\0)\2\0\0'\3\14\0005\4\15\0B\0\4\0016\0\5\0009\0\6\0009\0\a\0)\2\0\0'\3\16\0005\4\17\0B\0\4\0016\0\5\0009\0\6\0009\0\a\0)\2\0\0'\3\18\0005\4\19\0B\0\4\0016\0\5\0009\0\6\0009\0\a\0)\2\0\0'\3\20\0005\4\21\0B\0\4\0016\0\5\0009\0\6\0009\0\a\0)\2\0\0'\3\22\0005\4\23\0B\0\4\0016\0\5\0009\0\6\0009\0\a\0)\2\0\0'\3\24\0005\4\25\0B\0\4\0016\0\5\0009\0\6\0009\0\a\0)\2\0\0'\3\26\0005\4\27\0B\0\4\0016\0\5\0009\0\6\0009\0\a\0)\2\0\0'\3\28\0005\4\29\0B\0\4\1K\0\1\0\1\0\1\abg\tnone\16EndOfBuffer\1\0\1\abg\tnone\15SignColumn\1\0\1\abg\tnone\14VertSplit\1\0\1\abg\tnone\15StatusLine\1\0\1\abg\tnone\19NvimTreeNormal\1\0\1\abg\tnone\20TelescopeBorder\1\0\1\abg\tnone\20TelescopeNormal\1\0\1\abg\tnone\16FloatBorder\1\0\1\abg\tnone\16NormalFloat\1\0\1\abg\tnone\rNormalNC\1\0\1\abg\tnone\vNormal\16nvim_set_hl\bapi\bvim\tload\1\0\1\nstyle\vdarker\nsetup\fonedark\frequire\0" },
     loaded = true,
     path = "/home/priyanshu/.local/share/nvim/site/pack/packer/start/onedark.nvim",
     url = "https://github.com/navarasu/onedark.nvim"
@@ -185,18 +186,22 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: onedark.nvim
+time([[Config for onedark.nvim]], true)
+try_loadstring("\27LJ\2\nｦ\5\0\0\5\0\30\0Y6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\0016\0\0\0'\2\1\0B\0\2\0029\0\4\0B\0\1\0016\0\5\0009\0\6\0009\0\a\0)\2\0\0'\3\b\0005\4\t\0B\0\4\0016\0\5\0009\0\6\0009\0\a\0)\2\0\0'\3\n\0005\4\v\0B\0\4\0016\0\5\0009\0\6\0009\0\a\0)\2\0\0'\3\f\0005\4\r\0B\0\4\0016\0\5\0009\0\6\0009\0\a\0)\2\0\0'\3\14\0005\4\15\0B\0\4\0016\0\5\0009\0\6\0009\0\a\0)\2\0\0'\3\16\0005\4\17\0B\0\4\0016\0\5\0009\0\6\0009\0\a\0)\2\0\0'\3\18\0005\4\19\0B\0\4\0016\0\5\0009\0\6\0009\0\a\0)\2\0\0'\3\20\0005\4\21\0B\0\4\0016\0\5\0009\0\6\0009\0\a\0)\2\0\0'\3\22\0005\4\23\0B\0\4\0016\0\5\0009\0\6\0009\0\a\0)\2\0\0'\3\24\0005\4\25\0B\0\4\0016\0\5\0009\0\6\0009\0\a\0)\2\0\0'\3\26\0005\4\27\0B\0\4\0016\0\5\0009\0\6\0009\0\a\0)\2\0\0'\3\28\0005\4\29\0B\0\4\1K\0\1\0\1\0\1\abg\tnone\16EndOfBuffer\1\0\1\abg\tnone\15SignColumn\1\0\1\abg\tnone\14VertSplit\1\0\1\abg\tnone\15StatusLine\1\0\1\abg\tnone\19NvimTreeNormal\1\0\1\abg\tnone\20TelescopeBorder\1\0\1\abg\tnone\20TelescopeNormal\1\0\1\abg\tnone\16FloatBorder\1\0\1\abg\tnone\16NormalFloat\1\0\1\abg\tnone\rNormalNC\1\0\1\abg\tnone\vNormal\16nvim_set_hl\bapi\bvim\tload\1\0\1\nstyle\vdarker\nsetup\fonedark\frequire\0", "config", "onedark.nvim")
+time([[Config for onedark.nvim]], false)
+-- Config for: lualine.nvim
+time([[Config for lualine.nvim]], true)
+try_loadstring("\27LJ\2\n構1\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\2B\0\2\1K\0\1\0\foptions\1\0\1\foptions\0\1\0\3\25component_separators\5\23section_separators\5\ntheme\tauto\nsetup\flualine\frequire\0", "config", "lualine.nvim")
+time([[Config for lualine.nvim]], false)
+-- Config for: catppuccin
+time([[Config for catppuccin]], true)
+try_loadstring("\27LJ\2\n構1\0\0\3\0\a\0\f6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\0016\0\4\0009\0\5\0009\0\6\0'\2\1\0B\0\2\1K\0\1\0\16colorscheme\bcmd\bvim\1\0\2\fflavour\nmocha\27transparent_background\2\nsetup\15catppuccin\frequire\0", "config", "catppuccin")
+time([[Config for catppuccin]], false)
 -- Config for: nvim-tree.lua
 time([[Config for nvim-tree.lua]], true)
 try_loadstring("\27LJ\2\n7\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\14nvim-tree\frequire\0", "config", "nvim-tree.lua")
 time([[Config for nvim-tree.lua]], false)
--- Config for: onedark.nvim
-time([[Config for onedark.nvim]], true)
-try_loadstring("\27LJ\2\nb\0\0\3\0\5\0\f6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\0016\0\0\0'\2\1\0B\0\2\0029\0\4\0B\0\1\1K\0\1\0\tload\1\0\1\nstyle\vdarker\nsetup\fonedark\frequire\0", "config", "onedark.nvim")
-time([[Config for onedark.nvim]], false)
--- Config for: lualine.nvim
-time([[Config for lualine.nvim]], true)
-try_loadstring("\27LJ\2\n構1\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\2B\0\2\1K\0\1\0\foptions\1\0\1\foptions\0\1\0\3\23section_separators\5\ntheme\tauto\25component_separators\5\nsetup\flualine\frequire\0", "config", "lualine.nvim")
-time([[Config for lualine.nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

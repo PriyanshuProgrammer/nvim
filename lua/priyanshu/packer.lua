@@ -29,7 +29,18 @@ return require("packer").startup(function(use)
 	})
 
 	-- Catppuccin theme (already added)
-	use({ "catppuccin/nvim", as = "catppuccin" })
+	use({
+		"catppuccin/nvim",
+		as = "catppuccin",
+		config = function()
+			require("catppuccin").setup({
+				flavour = "mocha", -- or "latte", "frappe", "macchiato"
+				transparent_background = true,
+			})
+
+			vim.cmd.colorscheme("catppuccin")
+		end,
+	})
 
 	-- Optional: OneDark theme (similar to VS Code's clean look)
 	use({
@@ -39,6 +50,18 @@ return require("packer").startup(function(use)
 				style = "darker", -- Options: 'dark', 'darker', 'cool', 'warm', etc.
 			})
 			require("onedark").load()
+			-- Transparent backgrounds
+			vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+			vim.api.nvim_set_hl(0, "NormalNC", { bg = "none" })
+			vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
+			vim.api.nvim_set_hl(0, "FloatBorder", { bg = "none" })
+			vim.api.nvim_set_hl(0, "TelescopeNormal", { bg = "none" })
+			vim.api.nvim_set_hl(0, "TelescopeBorder", { bg = "none" })
+			vim.api.nvim_set_hl(0, "NvimTreeNormal", { bg = "none" })
+			vim.api.nvim_set_hl(0, "StatusLine", { bg = "none" })
+			vim.api.nvim_set_hl(0, "VertSplit", { bg = "none" })
+			vim.api.nvim_set_hl(0, "SignColumn", { bg = "none" })
+			vim.api.nvim_set_hl(0, "EndOfBuffer", { bg = "none" })
 		end,
 	})
 

@@ -1,6 +1,6 @@
 require("priyanshu.remap")
 require("priyanshu.packer")
--- require("priyanshu.colors")
+require("priyanshu.colors")
 require("priyanshu.lsp")
 require("priyanshu.treesitter")
 require("priyanshu.cmp")
